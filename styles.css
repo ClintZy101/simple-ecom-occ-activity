@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    border-bottom: black solid 0.5px;
+    background-color: #647a67;
+    height: 50px;
+    align-items: center;
+    color: white;
+    position:sticky;
+    top: 0;
+}
+
+.navbar-link{
+    margin-right: 30px;
+}
+.navbar-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.grocery-page {
+    /* background-color: #c6dec6; */
+    display: grid;
+    justify-content: center;
+}
+.grocery-header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px ;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.product-container {
+    display: grid;
+    justify-content: center;
+    gap:10px;
+    color:#647a67;
+    border:#647a67 solid 0.5px;
+    padding:15px;
+
+}
+
+.product-image{
+    width: 100%;
+    height: 250px;
+    /* border-radius: 10px; */
+    border-bottom: #647a67 solid 0.5px; 
+}
+
+.product-button {
+    background-color: #3c433b;
+    color:white;
+    cursor: pointer;
+    height:30px;
+    font-size: large;
+    border-radius: 5px;
+    border:none
+}
+.product-button:hover{
+    background-color: white;
+    color:black;
+    transition-duration: 0.7s;
+    border:#3c433b solid 0.5px;
+}
+
+#cart-section{
+    height: 100vh;
+    border-top: solid #3c433b 0.5px;
+}
+
+.cart-container {
+
+    margin-top:70px;
+    /* display: grid;
+    justify-content: center; */
+}
+
+.cart-header{
+display: grid;
+justify-content: center;
+}
+#total-price{
+    margin:20px;
+    font-weight: bold;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-around; */
+}
+.qty-button{
+    width: 50px;
+}
+/* #cart{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px ;
+    gap:10px;
+    padding:20px;
+} */
+
+.cart-checkout{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.cart-checkout > *{
+    margin-right: 30px;
+    height:30px;
+    width:200px
+}
+
+@media only screen and (max-width: 1200px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+    }
+  }
+@media only screen and (max-width: 900px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 300px 300px;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 300px;
+    }
+  }

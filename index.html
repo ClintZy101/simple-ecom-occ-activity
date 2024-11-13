@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+    <!-- Navbar -->
+    <div class="navbar">
+      <h3 class="navbar-link" onclick="goToSection('grocery-section')">Grocery List</h3>
+      <h3 class="navbar-link" onclick="goToSection('cart-section')">Cart Items:</h3>
+      <span id="cart-count">0</span>
+    </div>
+    <section id="grocery-section" >
+      <div class="grocery-page">
+        <h3 class="grocery-header">Grocery List</h3>
+        <div id="grocery-list" class="grid-container"></div>
+      </div>
+    </section>
+
+    <section id="cart-section"  >
+      <div class="cart-container">
+        <h2 class="cart-header">Your Cart</h2>
+        <div class="cart-checkout">
+            <p id="total-price">Total: PHP 0</p>
+            <button class="product-button" onclick="checkout()">Checkout</button>
+        </div>
+        
+
+        <div id="cart" class="grid-container"></div>
+      </div>
+    </section>
+
+    <script src="my-ecom.js"></script>
+  </body>
+</html>
